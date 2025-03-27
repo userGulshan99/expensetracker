@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 2%;
+    background-color: #c0c0c0;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-y: scroll;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+#heading{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+
+}
+
+.center{
+    text-align: center;
+    padding: 1% 0%;
+    font-size: 18px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse; 
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    background-color: darkcyan;
+    color: white;
+    text-transform: uppercase;
+}
+
+.savings td{
+    border: none;
+}
+
+.savings{
+    border: 1px solid black ;
+}
+
+#savings{
+    color: rgb(66, 66, 224);
+}
+
+.income{
+    color: darkolivegreen;
+}
+
+.expense{
+    color: rgb(219, 37, 37);
+}
+
+.yearly table tbody, tfoot{
+    text-align: end;
+}
+
+.yearly table tbody tr td:first-child{
+    text-align: left;
+}
+
+.monthly table tbody tr td:nth-last-child(2), .monthly table tbody tr td:nth-last-child(1){
+    text-align: end;
+}
+
+.notes {
+    margin-top: 20px;
+}
+
+.notes table {
+    margin-top: 10px;
+}
+
+
+#download{
+    width: 3%;
+    position: fixed;
+    right: 1%;
+    bottom: 1.5%;
+    cursor: pointer;
+}
+
+td{
+    width: fit-content;
+}
+
+
+.pagination{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+.pagination button{
+    padding: 8px 13px;
+    margin: 0px 4px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: palegoldenrod;
+}
+
+.pagination button :hover{
+    background-color: #d4af37;
+}
+
+#clicked{
+    padding: 12px 17px;
+}
+
+.pagination{
+    margin: 5% 0%;
+}
+
+.rows select{
+    outline: none;
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 5%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    button {
+        padding: 5px 8px;
+    }
+
+    .rows label {
+        font-size: 12px;
+    }
+
+    .pagination{
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0px;
+    }
+
+    #pagination, .rows {
+        display: flex;
+    }
+
+    #pagination button{
+        padding: 5px;
+    }
+    
+    #pagination #clicked{
+        padding: 5px 8px;
+        background-color: #d4af37;
+    }
+}
